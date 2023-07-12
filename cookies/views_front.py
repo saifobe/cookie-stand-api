@@ -24,7 +24,7 @@ class CookieUpdateView(LoginRequiredMixin, UpdateView):
 class CookieCreateView(LoginRequiredMixin, CreateView):
     template_name = "cookies/cookie_create.html"
     model = Cookie
-    fields = ["name", "rating", "reviewer"] # "__all__" for all of them
+    fields = ["name", "rating", "reviewer"] 
 
 
 class CookieDeleteView(LoginRequiredMixin, DeleteView):
